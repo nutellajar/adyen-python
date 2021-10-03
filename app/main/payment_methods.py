@@ -18,8 +18,8 @@ def adyen_payment_methods():
 
     payment_methods_request = {
         'merchantAccount': config.merchant_account,
-        'reference': 'Fusion paymentMethods call',
-        'shopperReference': 'Python Checkout Shopper',
+        'reference': 'Domingo paymentMethods call',
+        'shopperReference': 'Domingo Checkout Shopper',
         'channel': 'Web',
     }
     
