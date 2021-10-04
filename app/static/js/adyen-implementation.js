@@ -19,14 +19,14 @@ async function initCheckout() {
 					holderNameRequired: true,
 					name: "Credit or debit card",
 					amount: {
-						value: 1000,
+						value: 5000,
 						currency: "EUR"
 					}
 				},
 				paypal: {
 					amount: {
 						currency: "USD",
-						value: 1000
+						value: 5000
 					},
 					environment: "test", // Change this to "live" when you're ready to accept live PayPal payments
 					countryCode: "US", // Only needed for test. This will be automatically retrieved when you are in production.
