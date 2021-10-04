@@ -12,17 +12,7 @@ The orginal Git repository is [here]( https://github.com/adyen-examples/adyen-py
 
 - [Drop-in](https://docs.adyen.com/checkout/drop-in-web)
 - [Component](https://docs.adyen.com/checkout/components-web)
-  - ACH
-  - Alipay
-  - Boleto
-  - Card
-  - Dotpay
-  - Giropay
-  - iDEAL
-  - Klarna
-  - PayPal
-  - SEPA Direct Debit
-  - Sofort
+
 
 Please make sure to [add the above payment methods to your Adyen account](https://docs.adyen.com/payment-methods#add-payment-methods-to-your-account) before testing!
 
