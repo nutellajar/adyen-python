@@ -1,20 +1,56 @@
 {% extends "layout.html" %}
 {% block content %}
-    <div class='main-container'>
-        <div class="info">
-            <h1> Dennis Domingo's  MyStore Demo</h1>
-            
-        </div>
-        <ul class="integration-list">
-            <li class="integration-list-item">
-                <a class="integration-list-item-link" href="{{ url_for('cart', integration="dropin") }}">
-                    <div class="title-container">
-                        <p class="integration-list-item-title">Drop-in</p>
-                    </div>
-                </a>
-            </li>
-        
 
-        </ul>
+<style>
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 300px;
+      margin: auto;
+      text-align: center;
+      font-family: arial;
+    }
+    
+    .price {
+      color: grey;
+      font-size: 22px;
+    }
+    
+    .card button {
+      border: none;
+      outline: 0;
+      padding: 12px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+    }
+    
+    .card button:hover {
+      opacity: 0.7;
+    }
+
+
+
+
+</style>
+</head>
+<body>
+
+<h2 style="text-align:center">Product Card</h2>
+
+<div class="card">
+  <img src="{{ url_for('static', filename='img/sunglasses.png') }}" alt="Sunglasses" style="width:100%">
+  <h1>Sunglasses</h1>
+  <p class="price">€25.00</p>
+  <p>POLARIZED Wiley Men's Square Sunglasses. Lorem jeamsun denim lorem jeansum.</p>
+ 
+
+  <a class="integration-list-item-link" href="{{ url_for('cart', integration="dropin") }}">
+    <div class="title-container">
+        <p><button>Add to Cart</button></p>
     </div>
+</a>
+
 {% endblock %}
