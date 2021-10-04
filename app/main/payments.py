@@ -59,7 +59,7 @@ def adyen_payments(frontend_request):
 		},
 		'channel': 'Web',
 		'reference': order_ref,
-		'shopperReference': "Python Checkout Shopper",
+		'shopperReference': "Domingo Checkout Shopper",
 		'returnUrl': "http://localhost:8080/api/handleShopperRedirect?orderRef=" + order_ref,
 		'countryCode': 'NL',
 		'shopperLocale': "en_NL",
